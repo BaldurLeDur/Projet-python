@@ -30,3 +30,4 @@
     #Si winPLayerUn == 5
         #Alors : écrire "tu as gagner"
     #Sinon : écrire "tu as perdu"
+    #ld
