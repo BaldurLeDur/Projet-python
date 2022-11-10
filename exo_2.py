@@ -44,21 +44,21 @@
 #Sinon
     #Alors ecrire "dis le si je te fais chier"
 
-#jouer = str(input("Veuxt tu joueur au DEVINE OU TU PERDS ? Le but est simple un robot choisie un carcatèrealéatoire, tu dois le deviner. Réponds oui si tu veux jouer et non si tu ne veux pas. : "))
-#if jouer == "oui":
- #   while jouer == "oui":
-  #      charJoueur = str(input("Devine quelle caractère le robot vas choisir : "))
-   #     h = caracteres[random.randint(0, len(caracteres)-1)]
-    #    if charJoueur != h:
-     #       print("Le caractère que le robot a choisi est : ",h, ", alors que le tiens est : ",charJoueur,". Tu as perdu")
-      #      time.sleep(1.5)
-       #     print("T'es une merde")
-        #    time.sleep(1)
-         #   jouer = str(input("Tu veux rejouer. Repond oui ou non ? : "))
-        #else:
-         #   print("bien ouèj batard t'as trouvé")
-          #  time.sleep(1)
-           # jouer = str(input("Tu veux rejouer. Repond oui ou non ? : "))
+jouer = str(input("Veuxt tu joueur au DEVINE OU TU PERDS ? Le but est simple un robot choisie un carcatèrealéatoire, tu dois le deviner. Réponds oui si tu veux jouer et non si tu ne veux pas. : "))
+if jouer == "oui":
+    while jouer == "oui":
+        charJoueur = str(input("Devine quelle caractère le robot vas choisir : "))
+        h = caracteres[random.randint(0, len(caracteres)-1)]
+        if charJoueur != h:
+            print("Le caractère que le robot a choisi est : ",h, ", alors que le tiens est : ",charJoueur,". Tu as perdu")
+            time.sleep(1.5)
+            print("T'es une merde")
+            time.sleep(1)
+            jouer = str(input("Tu veux rejouer. Repond oui ou non ? : "))
+        else:
+            print("bien ouèj batard t'as trouvé")
+            time.sleep(1)
+            jouer = str(input("Tu veux rejouer. Repond oui ou non ? : "))
 #elif jouer == "non":
 #    print("bah dis le si je te fais chier")
 #else:
