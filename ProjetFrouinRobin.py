@@ -223,7 +223,7 @@ if jouer == 1:
                     print("une erreur de frappe est survenue. Veuillez réessayer")
         #Sinon si typeJeu est égal à 2 et nbJoueur est égal à 1
         elif typeJeu == 2 and nbJoueur == 1:
-            #Alors :
+            #Alors:
             #Définir variable pierre qui retourne une fonction input qui demande par quelle nom l'utilisateur veut remplacer la pierre
             pierre = str(input("Comment voulez vous renommer la pierre"))
             #Définir variable feuille qui retourne une fonction input sui demande par quelle nom l'utilisateur veut remplacer la feuille
