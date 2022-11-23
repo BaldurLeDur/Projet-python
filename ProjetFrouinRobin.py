@@ -14,7 +14,7 @@ if jouer == 1:
         #Définir nbJoueur qui retourne une fonction input qui demande combien y a-t-il de joueur
         nbJoueur = int(input("Veuillez choisir le nombre de joueur entre 1 et 2 joueur. : "))
         #Définir typeJeu qui retourne une fonction input qui demande à quel type de jeu l'utilisateur veut jouer : jeu classique (1) ou jeu personalisé (2)
-        typeJeu = int(input("Nous vous proposons 2 type de jeu. Le jeu clasique, et le jeu personalisé. Dans ce dernier, vous pouvez nommer comme les élément comme vous le voulez. Tapez 1 pour le mode classique et tapez 2 pour le mode personalisé"))
+        typeJeu = int(input("Nous vous proposons 2 type de jeu. Le jeu clasique, et le jeu personalisé. Dans ce dernier, vous pouvez nommer comme les élément comme vous le voulez. Tapez 1 pour le mode classique et tapez 2 pour le mode personalisé : "))
         #Définir round qui retourne une fonction input qui demande combien de round sont nécessaire pour gagner le match
         round = int(input("Combien de round seront nécaissaire pour gagner le match ? : "))
         #Créer variable winPlayerUn et la mettre à 0
@@ -31,7 +31,6 @@ if jouer == 1:
             #créer une liste listeClassique avec "pierre" "feuille" "ciseaux"
             listeClassique = ["pierre","feuille","ciseaux"]
             #Définir round qui retourne une fonction input qui demande combien de round sont nécessaire pour gagner le match
-            round = int(input("Combien de round seront nécaissaire pour gagner le match ? : "))
             while winRobot < round and winJoueur < round:
                     #Définir choixJoueur qui retourne une fonction input qui demande le choix du jouer
                     choixJoueur = str(input("choisissez entre pierre feuille et ciseaux. Attention à bien écrire ! : "))
@@ -445,10 +444,12 @@ if jouer == 1:
             if winPlayerUn == round :
                 #Alors : écrire pseudoJoueurUn," à gagner"
                 print(pseudoJoueurUn," à gagner")
+                joueur = 1
             #Sinon
             else:
                 #Alors : écrire pseudoJoueurDeux," à gagner"
                 print(pseudoJoueurUn," à gagner")
+                joueur = "bot"
         #Dormir 1 seconde
         time.sleep(1)
 
